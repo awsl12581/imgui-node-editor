@@ -102,7 +102,7 @@ bool PlatformGLFW::OpenMainWindow(const char* title, int width, int height)
     initializer = &ImGui_ImplGlfw_InitForOther;
 # endif
     glfwWindowHint(GLFW_SCALE_TO_MONITOR, GL_TRUE);
-    glfwWindowHint(GLFW_SCALE_FRAMEBUFFER, GL_TRUE);
+    // glfwWindowHint(GLFW_SCALE_FRAMEBUFFER, GL_TRUE);
 
     width  = width  < 0 ? 1440 : width;
     height = height < 0 ?  800 : height;
