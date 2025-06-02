@@ -123,10 +123,10 @@ endmacro()
 
 add_subdirectory(application)
 
-add_subdirectory(canvas-example)
-add_subdirectory(simple-example)
-add_subdirectory(widgets-example)
-add_subdirectory(basic-interaction-example)
+# add_subdirectory(canvas-example)
+# add_subdirectory(simple-example)
+# add_subdirectory(widgets-example)
+# add_subdirectory(basic-interaction-example)
 # add_subdirectory(blueprints-example)
 
-set_property(DIRECTORY PROPERTY VS_STARTUP_PROJECT blueprints-example)
+# set_property(DIRECTORY PROPERTY VS_STARTUP_PROJECT blueprints-example)
