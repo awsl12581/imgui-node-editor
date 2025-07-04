@@ -1,13 +1,21 @@
 if (NOT TARGET imgui)
     include(FetchContent)
 
-    FetchContent_Declare(
-        imgui
-        #GIT_REPOSITORY     https://github.com/ocornut/imgui.git
-        #GIT_TAG            12a3c77c2f4671813c2a09197234d5672f8ab5f3
+    # FetchContent_Declare(
+    #     imgui
+    #     #GIT_REPOSITORY     https://github.com/ocornut/imgui.git
+    #     #GIT_TAG            12a3c77c2f4671813c2a09197234d5672f8ab5f3
 
-        GIT_REPOSITORY      https://github.com/thedmd/imgui.git
-        GIT_TAG             layouts
+    #     GIT_REPOSITORY      https://github.com/thedmd/imgui.git
+    #     GIT_TAG             layouts
+    # )
+
+    FetchContent_Declare(
+    imgui
+    GIT_REPOSITORY "https://github.com/ocornut/imgui"
+    GIT_TAG "v1.90.9-docking"
+    GIT_PROGRESS TRUE
+    GIT_SHALLOW TRUE
     )
 
     FetchContent_MakeAvailable(imgui)

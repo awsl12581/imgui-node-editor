@@ -4,11 +4,20 @@ endif()
 
 include(FetchContent)
 
+# FetchContent_Declare(
+#     glfw
+#     GIT_REPOSITORY https://github.com/glfw/glfw
+# )
+# FetchContent_GetProperties(glfw)
+
 FetchContent_Declare(
     glfw
-    GIT_REPOSITORY https://github.com/glfw/glfw
+    GIT_REPOSITORY "https://github.com/glfw/glfw"
+    GIT_TAG "3.3.8"
+    GIT_PROGRESS TRUE
+    GIT_SHALLOW TRUE
 )
-FetchContent_GetProperties(glfw)
+# FetchContent_MakeAvailable(glfw)
 if(NOT glfw_POPULATED)
     FetchContent_Populate(glfw)
 
