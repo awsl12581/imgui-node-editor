@@ -13,7 +13,8 @@ if (NOT TARGET imgui)
     FetchContent_Declare(
     imgui
     GIT_REPOSITORY "https://github.com/ocornut/imgui"
-    GIT_TAG "v1.90.9-docking"
+    GIT_TAG "v1.90.9"
+    # GIT_TAG "v1.90.9-docking"
     GIT_PROGRESS TRUE
     GIT_SHALLOW TRUE
     )
